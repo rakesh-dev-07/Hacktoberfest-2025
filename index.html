@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchPad | Modern Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">LaunchPad</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+                    <li class="nav__item"><a href="#pricing" class="nav__link">Pricing</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__actions">
+                <a href="#get-started" class="nav__button">Get Started</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero__container container">
+                <div class="hero__content animate-hero">
+                    <h1 class="hero__title">Build Amazing Products, Faster Than Ever.</h1>
+                    <p class="hero__subtitle">
+                        An open-source landing page built by the community, for the community.
+                        Contribute and help us create the ultimate starting point for modern web projects.
+                    </p>
+                    <a href="#get-started" class="hero__button">Join the Mission <i class="ri-arrow-right-line"></i></a>
+                </div>
+                <div class="hero__image animate-hero">
+                    <svg width="400" height="400" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4ZM11 7V13H17V11H13V7H11ZM12 12C12.5523 12 13 11.5523 13 11C13 10.4477 12.5523 10 12 10C11.4477 10 11 10.4477 11 11C11 11.5523 11.4477 12 12 12Z"
+                            fill="url(#gradient-hero)" />
+                        <defs>
+                            <linearGradient id="gradient-hero" x1="2" y1="12" x2="22" y2="12"
+                                gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#8a2387" />
+                                <stop offset="1" stop-color="#e94057" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section class="features section" id="features">
+            <div class="features__container container">
+                <div class="section__header animate-on-scroll">
+                    <h2 class="section__title">Why Choose This Project?</h2>
+                    <p class="section__subtitle">A perfect place to learn, collaborate, and contribute during
+                        Hacktoberfest.</p>
+                </div>
+
+                <div class="features__grid">
+                    <div class="features__card animate-on-scroll">
+                        <div class="features__icon-wrapper">
+                            <i class="ri-git-merge-line features__icon"></i>
+                        </div>
+                        <h3 class="features__title">Collaborative</h3>
+                        <p class="features__description">
+                            Work with developers from around the world and be a part of a growing community.
+                        </p>
+                    </div>
+
+                    <div class="features__card animate-on-scroll">
+                        <div class="features__icon-wrapper">
+                            <i class="ri-code-s-slash-line features__icon"></i>
+                        </div>
+                        <h3 class="features__title">Modern Tech</h3>
+                        <p class="features__description">
+                            Built with a focus on modern, clean, and maintainable HTML, CSS, and JavaScript.
+                        </p>
+                    </div>
+
+                    <div class="features__card animate-on-scroll">
+                        <div class="features__icon-wrapper">
+                            <i class="ri-rocket-line features__icon"></i>
+                        </div>
+                        <h3 class="features__title">Hacktoberfest Ready</h3>
+                        <p class="features__description">
+                            Make meaningful contributions and achieve your Hacktoberfest goals with us.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <a href="#home" class="footer__logo">LaunchPad</a>
+                <p class="footer__description">An open-source landing page by Rakesh & Community.</p>
+            </div>
+
+            <div class="footer__social">
+                <a href="https://github.com/YOUR_GITHUB_ORG/YOUR_REPO" target="_blank" class="footer__social-link"
+                    aria-label="GitHub"><i class="ri-github-fill"></i></a>
+                <a href="https://twitter.com/YOUR_TWITTER_HANDLE" target="_blank" class="footer__social-link"
+                    aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+                <a href="https://linkedin.com/company/YOUR_COMPANY" target="_blank" class="footer__social-link"
+                    aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; 2025. All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
