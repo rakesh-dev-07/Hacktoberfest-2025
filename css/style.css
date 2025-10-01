@@ -324,6 +324,66 @@ img, svg {
     font-size: var(--small-font-size);
 }
 
+
+/* ======== FAQ / ACCORDION ======== */
+.faq__content {
+    max-width: 768px;
+    margin-inline: auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.faq__item {
+    background-color: var(--bg-color-alt);
+    border: 1px solid var(--border-color);
+    border-radius: .5rem;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    transition: box-shadow .3s;
+}
+
+.faq__item:hover {
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.faq__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-weight-medium);
+    color: var(--title-color);
+}
+
+/* Remove default arrow from <details> */
+.faq__question::-webkit-details-marker {
+  display: none;
+}
+.faq__question {
+  list-style: none;
+}
+
+.faq__arrow {
+    font-size: 1.5rem;
+    transition: transform .3s;
+}
+
+.faq__answer {
+    padding-top: 1rem;
+    font-size: var(--small-font-size);
+    line-height: 1.7;
+}
+
+/* Rotate arrow when open */
+.faq__item[open] > .faq__question .faq__arrow {
+    transform: rotate(180deg);
+}
+
+.faq__item[open] > .faq__question {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
 /* ======== FOOTER ======== */
 .footer {
     border-top: 1px solid var(--border-color);
