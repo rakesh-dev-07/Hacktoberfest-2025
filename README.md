@@ -11,7 +11,7 @@ Welcome to our open-source Modern Landing Page project! This is a community-driv
 
 ## ✨ Live Demo
 
-**[Click here to see the live version of our landing page!](https://rakesh.github.io/modern-landing-page/)**
+**[Click here to see the live version of our landing page!](https://rakesh-dev-07.github.io/Hacktoberfest-2025/)**
 
 ---
 
