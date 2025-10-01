@@ -371,6 +371,7 @@ img, svg {
 .footer__copy {
     font-size: 0.8rem;
     color: var(--text-color);
+    text-align: center;
 }
 
 /* ======== SCROLL-INTO-VIEW ANIMATION ======== */
@@ -545,5 +546,76 @@ img, svg {
 
     .footer {
         padding-top: 3rem;
+    }
+}
+
+
+/* ======== TESTIMONIALS SECTION ======== */
+.testimonials__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial__card {
+    background-color: var(--bg-color-alt);
+    padding: 2.5rem 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial__card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial__avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid var(--primary-color);
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+}
+
+.testimonial__quote {
+    font-style: italic;
+    margin-bottom: 2rem;
+    flex-grow: 1; /* Helps align authors at the bottom */
+    font-size: var(--small-font-size);
+}
+
+.testimonial__author {
+    margin-top: auto; /* Pushes the author to the bottom */
+}
+
+.testimonial__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-weight-semibold);
+    color: var(--title-color);
+    margin-bottom: 0.25rem;
+}
+
+.testimonial__title {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+
+/* ======== RESPONSIVE DESIGN FOR TESTIMONIALS ======== */
+@media screen and (max-width: 768px) {
+    .testimonials__grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .testimonial__card {
+        padding: 2rem 1.5rem;
     }
 }
