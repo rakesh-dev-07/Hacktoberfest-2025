@@ -97,7 +97,7 @@ git push origin feature/your-feature-name
 
 Here’s a quick overview of the project structure to help you get started:
 
-```
+```txt
 /
 ├── index.html            # The main HTML file
 ├── css/
