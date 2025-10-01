@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="css/style.css">
@@ -17,29 +16,23 @@
 </head>
 
 <body>
-
     <header class="header">
         <nav class="nav container">
             <a href="#home" class="nav__logo">LaunchPad</a>
-
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#features" class="nav__link">Features</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#testimonials" class="nav__link">Testimonials</a></li>
-<<<<<<< HEAD
                     <li class="nav__item"><a href="#faq" class="nav__link">FAQ</a></li>
-=======
->>>>>>> upstream/main
                     <li class="nav__item"><a href="#pricing" class="nav__link">Pricing</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
-
                 <div class="nav__close" id="nav-close">
                     <i class="ri-close-line"></i>
                 </div>
             </div>
-
             <div class="nav__actions">
                 <a href="#get-started" class="nav__button">Get Started</a>
                 <div class="nav__toggle" id="nav-toggle">
@@ -84,147 +77,135 @@
                     <p class="section__subtitle">A perfect place to learn, collaborate, and contribute during
                         Hacktoberfest.</p>
                 </div>
-
                 <div class="features__grid">
                     <div class="features__card animate-on-scroll">
-                        <div class="features__icon-wrapper">
-                            <i class="ri-git-merge-line features__icon"></i>
-                        </div>
+                        <div class="features__icon-wrapper"><i class="ri-git-merge-line features__icon"></i></div>
                         <h3 class="features__title">Collaborative</h3>
-                        <p class="features__description">
-                            Work with developers from around the world and be a part of a growing community.
-                        </p>
+                        <p class="features__description">Work with developers from around the world and be a part of a
+                            growing community.</p>
                     </div>
-
                     <div class="features__card animate-on-scroll">
-                        <div class="features__icon-wrapper">
-                            <i class="ri-code-s-slash-line features__icon"></i>
-                        </div>
+                        <div class="features__icon-wrapper"><i class="ri-code-s-slash-line features__icon"></i></div>
                         <h3 class="features__title">Modern Tech</h3>
-                        <p class="features__description">
-                            Built with a focus on modern, clean, and maintainable HTML, CSS, and JavaScript.
-                        </p>
+                        <p class="features__description">Built with a focus on modern, clean, and maintainable HTML,
+                            CSS, and JavaScript.</p>
                     </div>
-
                     <div class="features__card animate-on-scroll">
-                        <div class="features__icon-wrapper">
-                            <i class="ri-rocket-line features__icon"></i>
-                        </div>
+                        <div class="features__icon-wrapper"><i class="ri-rocket-line features__icon"></i></div>
                         <h3 class="features__title">Hacktoberfest Ready</h3>
-                        <p class="features__description">
-                            Make meaningful contributions and achieve your Hacktoberfest goals with us.
-                        </p>
+                        <p class="features__description">Make meaningful contributions and achieve your Hacktoberfest
+                            goals with us.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-<<<<<<< HEAD
-        <section class="faq section" id="faq">
-            <div class="faq__container container">
-                <div class="section__header animate-on-scroll">
-                    <h2 class="section__title">Frequently Asked Questions</h2>
-                    <p class="section__subtitle">Have questions? We've got answers. If you need more help, feel free to reach
-                        out.</p>
+        <section class="about section" id="about">
+            <div class="about__container container">
+                <div class="about__image animate-on-scroll">
+                    <svg width="400" height="400" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1h-2v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"
+                            fill="url(#gradient-hero)" />
+                    </svg>
                 </div>
-        
-                <div class="faq__content">
-                    <details class="faq__item animate-on-scroll">
-                        <summary class="faq__question">
-                            <span>What is Hacktoberfest?</span>
-                            <i class="ri-arrow-down-s-line faq__arrow"></i>
-                        </summary>
-                        <div class="faq__answer">
-                            <p>
-                                Hacktoberfest is a month-long celebration of open-source software. It's a great opportunity for
-                                developers to contribute to projects, learn new skills, and be part of the global tech
-                                community.
-                            </p>
-                        </div>
-                    </details>
-        
-                    <details class="faq__item animate-on-scroll">
-                        <summary class="faq__question">
-                            <span>How can I contribute to this project?</span>
-                            <i class="ri-arrow-down-s-line faq__arrow"></i>
-                        </summary>
-                        <div class="faq__answer">
-                            <p>
-                                It's easy! Fork this repository, create a new branch for your feature or fix, make your changes,
-                                and then open a pull request. Make sure to check the `CONTRIBUTING.md` file for specific
-                                guidelines.
-                            </p>
-                        </div>
-                    </details>
-        
-                    <details class="faq__item animate-on-scroll">
-                        <summary class="faq__question">
-                            <span>Do I need to be an expert to contribute?</span>
-                            <i class="ri-arrow-down-s-line faq__arrow"></i>
-                        </summary>
-                        <div class="faq__answer">
-                            <p>
-                                Not at all! This project is beginner-friendly. We welcome contributions of all sizes, from
-                                fixing a simple typo to adding a whole new feature. It's a great place to make your first
-                                open-source contribution.
-                            </p>
-                        </div>
-                    </details>
+                <div class="about__content animate-on-scroll">
+                    <div class="section__header" style="text-align: left; margin-bottom: 2rem;">
+                        <h2 class="section__title">About Our Mission</h2>
+                        <p class="section__subtitle" style="margin-inline: 0;">We believe in the power of collaboration.
+                        </p>
+                    </div>
+                    <p class="about__description">
+                        LaunchPad was created as a beginner-friendly space for developers participating in Hacktoberfest
+                        and beyond. Our goal is to provide a high-quality, modern project where anyone can make a
+                        meaningful contribution, learn best practices, and connect with a global community of builders.
+                        Every pull request helps us grow.
+                    </p>
                 </div>
             </div>
         </section>
-=======
+
         <section class="testimonials section" id="testimonials">
             <div class="testimonials__container container">
                 <div class="section__header animate-on-scroll">
                     <h2 class="section__title">What Our Contributors Say</h2>
                     <p class="section__subtitle">Hear from developers who have been a part of our journey.</p>
                 </div>
-
                 <div class="testimonials__grid">
                     <div class="testimonial__card animate-on-scroll">
                         <img src="https://i.pravatar.cc/150?u=a042581f4e29026704d" alt="Avatar of Alex Morgan"
                             class="testimonial__avatar">
-                        <p class="testimonial__quote">
-                            "Contributing to LaunchPad was the perfect Hacktoberfest experience. The project is
-                            well-structured, and the community is incredibly welcoming. Highly recommend!"
-                        </p>
+                        <p class="testimonial__quote">"Contributing to LaunchPad was the perfect Hacktoberfest
+                            experience. The project is well-structured, and the community is incredibly welcoming.
+                            Highly recommend!"</p>
                         <div class="testimonial__author">
-                            <h3 class="testimonial__name">Alex Morgan</h3>
-                            <span class="testimonial__title">Frontend Developer</span>
+                            <h3 class="testimonial__name">Alex Morgan</h3><span class="testimonial__title">Frontend
+                                Developer</span>
                         </div>
                     </div>
-
                     <div class="testimonial__card animate-on-scroll">
                         <img src="https://i.pravatar.cc/150?u=a042581f4e29026704e" alt="Avatar of Jordan Lee"
                             class="testimonial__avatar">
-                        <p class="testimonial__quote">
-                            "As a beginner in open source, I found this repository easy to get started with. The
-                            contribution guidelines are clear, and I learned a lot about modern web tech."
-                        </p>
+                        <p class="testimonial__quote">"As a beginner in open source, I found this repository easy to get
+                            started with. The contribution guidelines are clear, and I learned a lot about modern web
+                            tech."</p>
                         <div class="testimonial__author">
-                            <h3 class="testimonial__name">Jordan Lee</h3>
-                            <span class="testimonial__title">Student & Aspiring Dev</span>
+                            <h3 class="testimonial__name">Jordan Lee</h3><span class="testimonial__title">Student &
+                                Aspiring Dev</span>
                         </div>
                     </div>
-
                     <div class="testimonial__card animate-on-scroll">
                         <img src="https://i.pravatar.cc/150?u=a042581f4e29026704f" alt="Avatar of Casey Smith"
                             class="testimonial__avatar">
-                        <p class="testimonial__quote">
-                            "This is more than just a project; it's a community. It was awesome to collaborate with
-                            developers from all over the world. A fantastic initiative!"
-                        </p>
+                        <p class="testimonial__quote">"This is more than just a project; it's a community. It was
+                            awesome to collaborate with developers from all over the world. A fantastic initiative!"</p>
                         <div class="testimonial__author">
-                            <h3 class="testimonial__name">Casey Smith</h3>
-                            <span class="testimonial__title">Full-Stack Engineer</span>
+                            <h3 class="testimonial__name">Casey Smith</h3><span class="testimonial__title">Full-Stack
+                                Engineer</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
->>>>>>> upstream/main
+        <section class="faq section" id="faq">
+            <div class="faq__container container">
+                <div class="section__header animate-on-scroll">
+                    <h2 class="section__title">Frequently Asked Questions</h2>
+                    <p class="section__subtitle">Have questions? We've got answers. If you need more help, feel free to
+                        reach out.</p>
+                </div>
+                <div class="faq__content">
+                    <details class="faq__item animate-on-scroll">
+                        <summary class="faq__question"><span>What is Hacktoberfest?</span><i
+                                class="ri-arrow-down-s-line faq__arrow"></i></summary>
+                        <div class="faq__answer">
+                            <p>Hacktoberfest is a month-long celebration of open-source software. It's a great
+                                opportunity for developers to contribute to projects, learn new skills, and be part of
+                                the global tech community.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item animate-on-scroll">
+                        <summary class="faq__question"><span>How can I contribute to this project?</span><i
+                                class="ri-arrow-down-s-line faq__arrow"></i></summary>
+                        <div class="faq__answer">
+                            <p>It's easy! Fork this repository, create a new branch for your feature or fix, make your
+                                changes, and then open a pull request. Make sure to check the `CONTRIBUTING.md` file for
+                                specific guidelines.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item animate-on-scroll">
+                        <summary class="faq__question"><span>Do I need to be an expert to contribute?</span><i
+                                class="ri-arrow-down-s-line faq__arrow"></i></summary>
+                        <div class="faq__answer">
+                            <p>Not at all! This project is beginner-friendly. We welcome contributions of all sizes,
+                                from fixing a simple typo to adding a whole new feature. It's a great place to make your
+                                first open-source contribution.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -233,7 +214,6 @@
                 <a href="#home" class="footer__logo">LaunchPad</a>
                 <p class="footer__description">An open-source landing page by Rakesh & Community.</p>
             </div>
-
             <div class="footer__social">
                 <a href="https://github.com/YOUR_GITHUB_ORG/YOUR_REPO" target="_blank" class="footer__social-link"
                     aria-label="GitHub"><i class="ri-github-fill"></i></a>
