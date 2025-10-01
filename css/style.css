@@ -371,6 +371,7 @@ img, svg {
 .footer__copy {
     font-size: 0.8rem;
     color: var(--text-color);
+    text-align: center;
 }
 
 /* ======== SCROLL-INTO-VIEW ANIMATION ======== */
