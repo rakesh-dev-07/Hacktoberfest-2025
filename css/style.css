@@ -722,3 +722,112 @@ img, svg {
         margin-inline: auto;
     }
 }
+
+
+/* ======== PRICING SECTION ======== */
+.pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.pricing__card {
+    background-color: var(--bg-color-alt);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.pricing__card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Most Popular Card Style */
+.pricing__card.popular {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05);
+}
+
+.pricing__card.popular::before {
+    content: 'Most Popular';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-gradient);
+    color: var(--title-color);
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-weight-semibold);
+}
+
+.pricing__plan {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.pricing__price {
+    margin-bottom: 1rem;
+}
+
+.pricing__amount {
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--title-color);
+}
+
+.pricing__period {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+.pricing__description {
+    font-size: var(--small-font-size);
+    margin-bottom: 2rem;
+    height: 40px; /* Ensures cards align nicely */
+}
+
+.pricing__features {
+    text-align: left;
+    margin-bottom: 2.5rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.pricing__features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.pricing__features i {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+}
+
+.pricing__button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 0.5rem;
+    color: var(--title-color);
+    font-weight: var(--font-weight-semibold);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.pricing__button:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.pricing__card.popular .pricing__button {
+    background: var(--primary-gradient);
+    border: none;
+}
