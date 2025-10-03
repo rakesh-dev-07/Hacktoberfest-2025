@@ -31,8 +31,8 @@ We welcome contributions of all sizes, from fixing a typo to adding a whole new 
 
 ### **Step 1: Find an Issue or Propose a Feature**
 
-* Look for open issues in the **[Issues tab](https://github.com/rakesh/modern-landing-page/issues)**. If you find one you'd like to work on, please comment on it to let us know.
-* If you have a new idea for a feature (e.g., a "Testimonials" section, a "FAQ" section, a new animation), please **[create a new issue](https://github.com/rakesh/modern-landing-page/issues/new)** to discuss it first.
+* Look for open issues in the **[Issues tab](https://github.com/rakesh-dev-07/Hacktoberfest-2025/issues)**. If you find one you'd like to work on, please comment on it to let us know.
+* If you have a new idea for a feature (e.g., a "Testimonials" section, a "FAQ" section, a new animation), please **[create a new issue](https://github.com/rakesh-dev-07/Hacktoberfest-2025/issues/new)** to discuss it first.
 
 ### **Step 2: Fork & Clone the Repository**
 
