@@ -203,9 +203,7 @@ img, svg {
 
 /* Sticky Header Style */
 .header.sticky-header {
-    background-color: rgba(12, 10, 31, 0.8);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background-color: var(--bg-color);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
