@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaunchPad | Modern Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/testimonial.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">LaunchPad</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#features" class="nav__link">Features</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="index.html#testimonials" class="nav__link">Testimonials</a></li>
+                    <li class="nav__item"><a href="index.html#faq" class="nav__link">FAQ</a></li>
+                    <li class="nav__item"><a href="index.html#pricing" class="nav__link">Pricing</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="nav__actions">
+                <a href="#get-started" class="nav__button">Get Started</a>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact section" id="contact">
+            <div class="contact__container container">
+                <div class="section__header animate-on-scroll">
+                    <h2 class="section__title">Get In Touch</h2>
+                    <p class="section__subtitle">Have a question, suggestion, or just want to chat? Send us a message.
+                    </p>
+                </div>
+
+                <div class="contact__content">
+                    <form action="#" class="contact__form animate-on-scroll">
+                        <div class="contact__form-group">
+                            <input type="text" name="name" placeholder="Your Name" class="contact__input" required>
+                        </div>
+                        <div class="contact__form-group">
+                            <input type="email" name="email" placeholder="Your Email" class="contact__input" required>
+                        </div>
+                        <div class="contact__form-group">
+                            <input type="text" name="subject" placeholder="Subject" class="contact__input" required>
+                        </div>
+                        <div class="contact__form-group">
+                            <textarea name="message" placeholder="Your Message" class="contact__input contact__textarea"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="contact__button hero__button">Send Message <i
+                                class="ri-send-plane-line"></i></button>
+                    </form>
+
+                    <div class="contact__info animate-on-scroll">
+                        <div class="contact__info-item">
+                            <i class="ri-mail-line contact__info-icon"></i>
+                            <h3 class="contact__info-title">Email Us</h3>
+                            <p class="contact__info-text">support@launchpad.com</p>
+                        </div>
+                        <div class="contact__info-item">
+                            <i class="ri-map-pin-line contact__info-icon"></i>
+                            <h3 class="contact__info-title">Office</h3>
+                            <p class="contact__info-text">123 Open Source Way, Communityville</p>
+                        </div>
+                        <div class="contact__info-item">
+                            <i class="ri-github-fill contact__info-icon"></i>
+                            <h3 class="contact__info-title">Repository</h3>
+                            <a href="https://github.com/YOUR_REPO" target="_blank"
+                                class="contact__info-text link-text">github.com/LaunchPad</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <a href="#home" class="footer__logo">LaunchPad</a>
+                <p class="footer__description">An open-source landing page by Rakesh & Community.</p>
+            </div>
+            <div class="footer__social">
+                <a href="https://github.com/YOUR_GITHUB_ORG/YOUR_REPO" target="_blank" class="footer__social-link"
+                    aria-label="GitHub"><i class="ri-github-fill"></i></a>
+                <a href="https://twitter.com/YOUR_TWITTER_HANDLE" target="_blank" class="footer__social-link"
+                    aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+                <a href="https://linkedin.com/company/YOUR_COMPANY" target="_blank" class="footer__social-link"
+                    aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+            </div>
+        </div>
+        <p class="footer__copy">&#169; 2025. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
