@@ -832,9 +832,6 @@ img, svg {
     border: none;
 }
 
-
-
-
 /* ======== CONTACT SECTION ======== */
 .contact__content {
     display: grid;
@@ -951,3 +948,4 @@ img, svg {
         text-align: center;
     }
 }
+@import url("./components/happyclientsection.css");

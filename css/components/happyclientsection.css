@@ -1,0 +1,82 @@
+/* ======== HAPPY CLIENTS SECTION ======== */
+.clients {
+    background-color: var(--bg-color);
+    padding: 6rem 0 4rem;
+}
+
+.clients__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.client__card {
+    background-color: var(--bg-color-alt);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.client__card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.client__icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.client__count {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--title-color);
+    margin-bottom: 0.5rem;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.client__title {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: 0.5px;
+}
+
+/* ======== ANIMATION ON SCROLL ======== */
+.clients__container .client__card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.clients__container .client__card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ======== RESPONSIVE DESIGN ======== */
+@media screen and (max-width: 768px) {
+    .clients__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .client__count {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .clients__container {
+        grid-template-columns: 1fr;
+    }
+}
