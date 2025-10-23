@@ -70,6 +70,57 @@
             </div>
         </section>
 
+        <!-- Accordion FAQ -->
+<h2>FAQ</h2>
+<button class="accordion">What is this project?</button>
+<div class="panel">
+  <p>This is a Hacktoberfest 2025 landing page project to practice HTML, CSS, and JS.</p>
+</div>
+
+<button class="accordion">Do we need to deploy?</button>
+<div class="panel">
+  <p>No, just contribute code improvements and submit a PR.</p>
+</div>
+
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  margin-top: 5px;
+}
+.accordion.active, .accordion:hover {
+  background-color: #ccc;
+}
+.panel {
+  padding: 0 12px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  color: black;
+}
+</style>
+
+<script>
+const acc = document.getElementsByClassName("accordion");
+for(let i=0; i<acc.length; i++){
+  acc[i].addEventListener("click", function(){
+    this.classList.toggle("active");
+    const panel = this.nextElementSibling;
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
+  });
+}
+</script>
+
+
+
         <section class="features section" id="features">
             <div class="features__container container">
                 <div class="section__header animate-on-scroll">
