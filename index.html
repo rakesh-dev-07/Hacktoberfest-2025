@@ -70,49 +70,55 @@
             </div>
         </section>
 
-                       <!-- Scroll to Top Button -->
-<button onclick="scrollToTop()" id="scrollBtn" title="Go to top">↑</button>
+        <!-- Accordion FAQ -->
+<h2>FAQ</h2>
+<button class="accordion">What is this project?</button>
+<div class="panel">
+  <p>This is a Hacktoberfest 2025 landing page project to practice HTML, CSS, and JS.</p>
+</div>
+
+<button class="accordion">Do we need to deploy?</button>
+<div class="panel">
+  <p>No, just contribute code improvements and submit a PR.</p>
+</div>
 
 <style>
-#scrollBtn {
-  display: none;
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #4CAF50;
-  color: white;
+.accordion {
+  background-color: #eee;
+  color: #444;
   cursor: pointer;
-  padding: 12px 16px;
-  border-radius: 50%;
-  font-size: 18px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  margin-top: 5px;
 }
-#scrollBtn:hover {
-  background-color: #45a049;
+.accordion.active, .accordion:hover {
+  background-color: #ccc;
+}
+.panel {
+  padding: 0 12px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  color: black;
 }
 </style>
 
 <script>
-const scrollBtn = document.getElementById("scrollBtn");
-
-// Show button when user scrolls down 100px
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    scrollBtn.style.display = "block";
-  } else {
-    scrollBtn.style.display = "none";
-  }
-}
-
-// Scroll to top on click
-function scrollToTop() {
-  window.scrollTo({top: 0, behavior: 'smooth'});
+const acc = document.getElementsByClassName("accordion");
+for(let i=0; i<acc.length; i++){
+  acc[i].addEventListener("click", function(){
+    this.classList.toggle("active");
+    const panel = this.nextElementSibling;
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
+  });
 }
 </script>
+
 
 
         <section class="features section" id="features">
